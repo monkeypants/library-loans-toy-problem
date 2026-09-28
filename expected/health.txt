@@ -1,0 +1,100 @@
+== /health ==
+  [ Epistemic ]  0 question(s) awaiting triage · 0 resurfaced · 0 regressed · 0 awaiting a stakeholder · 0 incomplete · 0 dangling-audience
+  [ Evidence ]   0 awaiting notes · 4 lens gap(s) · 0 staged file(s) · 0 review(s) need work · 0 non-verbatim quote(s) · 14 drifted · 0 clustering stale
+  [ Structural ] 0 pending engineering follow-up(s) · 0 dangling · 0 term collision(s) · 0 misfiled · 14 slug(s) unreviewed · 0 drafted candidate(s) · 0 binding issue(s) · 0 spillover · 0 unparseable file(s)
+  [ Debt ]       0 un-minted · 10 legacy schema file(s)   (target 0)
+
+== lens bindings ==
+  (which lenses are switched on for this project, and the source kinds each one reads)
+  domain -> namespaces=['domain'] sources=['prd', 'meeting', 'reference']
+  persona -> namespaces=['persona'] sources=['prd', 'meeting', 'reference']
+  quality -> namespaces=['quality'] sources=['prd', 'meeting', 'reference']
+  rfc -> namespaces=['domain', 'codec'] sources=['standard']
+  4 binding(s), all valid
+
+== lens-coverage gaps ==
+  (a document not yet read through a bound lens; each gap is one /evidence-extract still owed)
+  Missing lens coverage (1 of 3):
+    source:  discovery/sources/circulation_desk_notes.md
+    suggest: /evidence-extract discovery/sources/circulation_desk_notes.md --lens persona
+  Missing lens coverage (2 of 3):
+    source:  discovery/sources/membership_overview.md
+    suggest: /evidence-extract discovery/sources/membership_overview.md --lens quality
+  Missing lens coverage (3 of 3):
+    meeting:  discovery/meetings/2026-01-15-acquisitions-sync/notes.org
+    suggest: /evidence-extract discovery/meetings/2026-01-15-acquisitions-sync/notes.org --lens domain
+    suggest: /evidence-extract discovery/meetings/2026-01-15-acquisitions-sync/notes.org --lens quality
+  4 missing pair(s) · 8 of 12 (document × lens) covered
+
+== dangling association referents ==
+  (a claim pointing at a canonical slug that doesn't exist: a typo, or canon still to be minted)
+  All association referents resolve to canonical artefacts.
+
+== misfiled associations ==
+  (a claim filed under a lens that may not hold its namespace; a cross-namespace repoint leaves one behind and reports success)
+  Every association sits in a lens that may hold it.
+
+== term collisions ==
+  (a glossary term with a second canonical home, another registry entry or a type the code reifies; a term is defined in exactly one)
+  Every term has exactly one canonical home (corpus or code).
+
+== non-verbatim quotes ==
+  (a stated claim whose quote can't be found verbatim in its source, so the provenance link is broken)
+  Every stated association's quote appears verbatim in its source.
+
+== un-minted associations ==
+  (an association with no stable id yet; review tooling cites ids, so un-minted claims can't carry findings)
+  Every association carries an id (review tooling can resolve findings).
+
+== reviews needing work ==
+  (review files with findings still to act on: rewrites to apply or page findings to resolve)
+  (no review files under discovery/reviews/)
+
+== unreviewed canonical pages ==
+  (a slug with evidence but no review file yet; its claims have never been checked as a page)
+  Next batch: term (1 slug)
+    - term.patron
+  Suggest:
+    /review-evidence term.patron
+
+  Remaining backlog:
+    codec: 2 of 2 slugs unreviewed
+    domain: 6 of 6 slugs unreviewed
+    persona: 3 of 5 slugs unreviewed
+    quality: 2 of 2 slugs unreviewed
+
+== corpus drift (entry stale vs its evidence) ==
+  (a canonical summary now older than the evidence beneath it; re-synthesise via /review-canonical to refresh)
+  codec.leader.Leader  (never synthesised, 2 associations)
+    suggest: /review-canonical codec.leader.Leader
+  codec.record.Marc21Record  (never synthesised, 2 associations)
+    suggest: /review-canonical codec.record.Marc21Record
+  domain.book.Book  (never synthesised, 2 associations)
+    suggest: /review-canonical domain.book.Book
+  domain.copy.Copy  (never synthesised, 1 association)
+    suggest: /review-canonical domain.copy.Copy
+  domain.hold.Hold  (never synthesised, 1 association)
+    suggest: /review-canonical domain.hold.Hold
+  domain.loan.Loan  (never synthesised, 1 association)
+    suggest: /review-canonical domain.loan.Loan
+  domain.loan_status.LoanStatus  (never synthesised, 1 association)
+    suggest: /review-canonical domain.loan_status.LoanStatus
+  domain.member.Member  (never synthesised, 1 association)
+    suggest: /review-canonical domain.member.Member
+  persona.borrower  (never synthesised, 3 associations)
+    suggest: /review-canonical persona.borrower
+  persona.librarian  (never synthesised, 2 associations)
+    suggest: /review-canonical persona.librarian
+  persona.teacher  (never synthesised, 1 association)
+    suggest: /review-canonical persona.teacher
+  quality.reading-engagement  (never synthesised, 1 association)
+    suggest: /review-canonical quality.reading-engagement
+  quality.searchability  (never synthesised, 1 association)
+    suggest: /review-canonical quality.searchability
+  term.patron  (never synthesised, 1 association)
+    suggest: /review-canonical term.patron
+  14 entries drifted from their evidence
+
+== canonical-review spillover ==
+  (whole-entry concerns a review raised, like glossary candidates or reparents, that need a human merge)
+  (no canonical-review findings under discovery/reviews/canonical.*.toml)

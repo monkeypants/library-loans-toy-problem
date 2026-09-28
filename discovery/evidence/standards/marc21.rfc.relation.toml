@@ -1,0 +1,29 @@
+# Retained association metadata for the disco-agent methodology. The
+# delivered lens-file beside this one carries only provenance (id,
+# referent, section, quote); this sidecar holds the analytical framing
+# (forward/reverse readings, the object_ref relation edge, confidence, and
+# the last_updated stamp), keyed by association id.
+
+[[relation]]
+id         = "marc21.rfc:0"
+forward    = "MARC 21 fixes the leader at 24 octets — the codec's Leader is exactly that wide because the standard says so, not by the library's choice."
+reverse    = "codec.leader.Leader conforms to MARC 21 §4.2: its fixed 24-octet width is dictated by the standard, not the domain."
+confidence = "stated"
+
+[[relation]]
+id         = "marc21.rfc:1"
+forward    = "Position 05 carries the record status, so Leader.record_status is a single character drawn from the standard's n/c/d vocabulary."
+reverse    = "codec.leader.Leader.record_status implements MARC 21 §4.2's position-05 status code (n new, c corrected, d deleted)."
+confidence = "stated"
+
+[[relation]]
+id         = "marc21.rfc:2"
+forward    = "The standard transmits variable fields in ascending tag order and terminates each — Marc21Record preserves tag order for exactly this reason."
+reverse    = "codec.record.Marc21Record conforms to MARC 21 §5: it keeps fields in ascending tag order because the transmission format requires it."
+confidence = "stated"
+
+[[relation]]
+id         = "marc21.rfc:3"
+forward    = "The directory indexes the variable fields by offset, so Marc21Record rebuilds it from its fields rather than holding a separate schema."
+reverse    = "codec.record.Marc21Record's directory handling conforms to MARC 21 §4.3: fixed 12-octet entries, in ascending tag order."
+confidence = "stated"

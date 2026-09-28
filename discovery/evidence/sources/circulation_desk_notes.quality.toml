@@ -1,0 +1,11 @@
+source = "discovery/sources/circulation_desk_notes.md"
+source_kind = "prd"
+title = "Circulation Desk — Goals and Pain Points"
+date = 2026-01-10
+lens = "quality"
+
+[[association]]
+id         = "circulation_desk_notes.quality:0"
+referent   = "quality.searchability"
+section    = "Pain points and frustrations"
+quote      = "staff have no quick way to search the catalogue from the desk"

@@ -1,0 +1,11 @@
+# Retained association metadata for the disco-agent methodology. The
+# delivered lens-file beside this one carries only provenance (id,
+# referent, section, quote); this sidecar holds the analytical framing
+# (forward/reverse readings, the object_ref relation edge, confidence, and
+# the last_updated stamp), keyed by association id.
+
+[[relation]]
+id         = "circulation_desk_notes.quality:0"
+forward    = "Staff have no quick way to search the catalogue from the desk, and locating a member's current loans is slow and manual."
+reverse    = "quality.searchability is exercised by the desk's need to find titles and member loans quickly."
+confidence = "stated"

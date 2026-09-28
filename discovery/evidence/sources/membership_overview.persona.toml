@@ -1,0 +1,17 @@
+source = "discovery/sources/membership_overview.md"
+source_kind = "prd"
+title = "Membership Overview"
+date = 2026-01-12
+lens = "persona"
+
+[[association]]
+id         = "membership_overview.persona:0"
+referent   = "persona.borrower"
+section    = "Who uses the system"
+quote      = "Borrowers hold a library card and check books out."
+
+[[association]]
+id         = "membership_overview.persona:1"
+referent   = "persona.librarian"
+section    = "Who uses the system"
+quote      = "Librarians register new members, manage the catalogue, and handle returns."

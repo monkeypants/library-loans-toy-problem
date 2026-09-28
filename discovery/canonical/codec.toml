@@ -1,0 +1,15 @@
+# Review-state sidecar for the `codec` code-backed namespace (the MARC 21
+# encoder under src/lib_loans/codec/). Content-free: the canonical text is
+# the modules' own docstrings, so this file carries only per-entry review
+# timestamps, keyed by module stem. Absent timestamps mean "never reviewed"
+# — the legitimate initial state, mirroring how the domain sidecar works.
+
+[[entry]]
+slug = "leader"
+[[entry.class]]
+name = "Leader"
+
+[[entry]]
+slug = "record"
+[[entry.class]]
+name = "Marc21Record"

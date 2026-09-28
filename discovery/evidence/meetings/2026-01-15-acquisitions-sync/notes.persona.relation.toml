@@ -1,0 +1,17 @@
+# Retained association metadata for the disco-agent methodology. The
+# delivered lens-file beside this one carries only provenance (id,
+# referent, section, quote); this sidecar holds the analytical framing
+# (forward/reverse readings, the object_ref relation edge, confidence, and
+# the last_updated stamp), keyed by association id.
+
+[[relation]]
+id         = "2026-01-15-acquisitions-sync.persona:0"
+forward    = "Librarians want to search the catalogue from the circulation desk so they can answer availability questions while the member waits."
+reverse    = "Librarians gain a desk-side catalogue search as an explicit ask."
+confidence = "stated"
+
+[[relation]]
+id         = "2026-01-15-acquisitions-sync.persona:1"
+forward    = "Borrowers return books at the desk; staff confirm the loan is closed against the member's card."
+reverse    = "Borrowers are part of the returns workflow that closes a loan against their card."
+confidence = "stated"

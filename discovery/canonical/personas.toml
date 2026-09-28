@@ -1,0 +1,56 @@
+# Canonical personas for the golden library-loans corpus. Referenceable
+# from evidence associations as ``persona.<slug>``.
+
+[[persona]]
+slug = "user"
+parent = "persona"
+title = "User"
+summary = """
+*A population with hands on the loans system.*
+"""
+
+[[persona]]
+slug = "borrower"
+parent = "user"
+title = "Borrower"
+summary = """
+*A library member who checks books out and returns them.* The primary
+hands-on consumer of the loans system.
+"""
+
+[[persona]]
+slug = "librarian"
+parent = "user"
+title = "Librarian"
+summary = """
+*Front-desk staff who issue loans, register members, and maintain the
+catalogue.*
+"""
+
+[[persona]]
+slug = "stakeholder"
+parent = "persona"
+title = "Stakeholder"
+summary = """
+*A party with a stake in the library's outcomes who does not operate the
+loans system.* The counterpart root to ``user``: where a user has hands on
+the system — issuing loans or borrowing — a stakeholder is served through
+it at one remove, their interest mediated by the users and the collection
+rather than by any workflow they run themselves.
+"""
+
+[[persona]]
+slug = "teacher"
+parent = "stakeholder"
+title = "Teacher"
+summary = """
+*A local school teacher with a stake in the library, served entirely
+through the pupils they teach.* A teacher holds no card and issues no
+loans — they never touch the loans system — but their pupils are
+:doc:`borrowers </personas/borrower>` who visit each week, and the teacher
+recommends acquisitions on the strength of what gets reluctant readers
+reading at home (Miss Jones of Class 2B asked the library to stock Frank
+Murr's "What a Mess" books for exactly this reason). The interest is real
+but indirect: it runs through the student borrowers and through the
+collection's reading-engagement, never through an operational workflow.
+"""

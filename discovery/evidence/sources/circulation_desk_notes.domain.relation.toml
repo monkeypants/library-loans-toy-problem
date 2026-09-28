@@ -1,0 +1,35 @@
+# Retained association metadata for the disco-agent methodology. The
+# delivered lens-file beside this one carries only provenance (id,
+# referent, section, quote); this sidecar holds the analytical framing
+# (forward/reverse readings, the object_ref relation edge, confidence, and
+# the last_updated stamp), keyed by association id.
+
+[[relation]]
+id         = "circulation_desk_notes.domain:0"
+forward    = "The circulation desk records every book that goes out on loan, capturing which member holds it and the due-back date."
+reverse    = "domain.loan is the artefact the circulation desk creates and tracks for each book that leaves the building."
+confidence = "stated"
+
+[[relation]]
+id         = "circulation_desk_notes.domain:1"
+forward    = "Members frequently ask whether a title is available, so the book catalogue must be queryable from the desk."
+reverse    = "domain.book gains a desk-side availability lookup requirement."
+confidence = "inferred"
+
+[[relation]]
+id         = "circulation_desk_notes.domain:2"
+forward    = "The desk scans the barcode of the individual volume being borrowed, so the loaned thing is the physical copy, not the catalogue title."
+reverse    = "domain.copy is the barcoded physical volume the desk identifies at checkout, distinct from the catalogue title."
+confidence = "stated"
+
+[[relation]]
+id         = "circulation_desk_notes.domain:3"
+forward    = "A loan moves through out, overdue, returned, and lost — the desk needs an agreed vocabulary for where a loan stands."
+reverse    = "domain.loan_status is the controlled vocabulary for a loan's lifecycle state, derived from the desk's out/overdue/returned/lost language."
+confidence = "stated"
+
+[[relation]]
+id         = "circulation_desk_notes.domain:4"
+forward    = "When all copies of a title are out, a member can ask to be queued for the next returned copy."
+reverse    = "domain.hold is the waiting-list request the desk records against a title when no copy is free."
+confidence = "stated"

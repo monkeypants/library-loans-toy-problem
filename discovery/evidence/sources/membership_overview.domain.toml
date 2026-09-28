@@ -1,0 +1,11 @@
+source = "discovery/sources/membership_overview.md"
+source_kind = "prd"
+title = "Membership Overview"
+date = 2026-01-12
+lens = "domain"
+
+[[association]]
+id         = "membership_overview.domain:0"
+referent   = "domain.member.Member"
+section    = "Notes"
+quote      = "A member may hold several loans at once."

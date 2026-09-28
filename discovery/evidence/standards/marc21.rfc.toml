@@ -1,0 +1,29 @@
+source = "discovery/standards/marc21.md"
+source_kind = "standard"
+title = "MARC 21 Format for Bibliographic Data (Z39.2)"
+date = 2024-09-01
+lens = "rfc"
+
+[[association]]
+id         = "marc21.rfc:0"
+referent   = "codec.leader.Leader"
+section    = "§4.2"
+quote      = "It consists of 24 octets (character positions 00-23) and is the only field of fixed length."
+
+[[association]]
+id         = "marc21.rfc:1"
+referent   = "codec.leader.Leader"
+section    = "§4.2"
+quote      = "Character position 05 contains the record status: a single character, where `n` denotes a new record, `c` a corrected or revised record, and `d` a deleted record."
+
+[[association]]
+id         = "marc21.rfc:2"
+referent   = "codec.record.Marc21Record"
+section    = "§5"
+quote      = "Variable fields are transmitted in ascending tag order, and each variable field is closed by a field terminator."
+
+[[association]]
+id         = "marc21.rfc:3"
+referent   = "codec.record.Marc21Record"
+section    = "§4.3"
+quote      = "Each entry is a fixed 12 octets and gives the tag, length, and starting character position of one variable field. Entries appear in ascending order of the tags they point to."

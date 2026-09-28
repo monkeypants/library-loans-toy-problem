@@ -1,0 +1,11 @@
+source = "discovery/sources/letter_miss_jones.md"
+source_kind = "reference"
+title = "Letter — Miss Jones, Class 2B"
+date = 2026-01-08
+lens = "quality"
+
+[[association]]
+id         = "letter_miss_jones.quality:0"
+referent   = "quality.reading-engagement"
+section    = "Body"
+quote      = "the *What a Mess* books were quite the success at encouraging the children to keep reading once they had gone home for the day"

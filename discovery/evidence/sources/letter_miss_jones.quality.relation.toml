@@ -1,0 +1,11 @@
+# Retained association metadata for the disco-agent methodology. The
+# delivered lens-file beside this one carries only provenance (id,
+# referent, section, quote); this sidecar holds the analytical framing
+# (forward/reverse readings, the object_ref relation edge, confidence, and
+# the last_updated stamp), keyed by association id.
+
+[[relation]]
+id         = "letter_miss_jones.quality:0"
+forward    = "The teacher judges the collection by whether its titles get reluctant readers reading at home, not by how it is searched."
+reverse    = "quality.reading-engagement is exercised by a teacher's recommendation grounded in a title's success at encouraging home reading."
+confidence = "stated"

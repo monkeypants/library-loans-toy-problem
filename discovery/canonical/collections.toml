@@ -1,0 +1,37 @@
+# A host-declared registry-backed canonical kind: the library's collections.
+#
+# Declared purely by [tool.disco.namespaces.collection] in pyproject.toml —
+# resolver = "canonical_toml", no engine code. It carries no facets and no
+# taxonomy, which is the ordinary shape of a host kind, and it exists here so
+# the corpus proves a host kind renders a navigable catalogue page rather than
+# orphaned fragments (#490).
+#
+# Order is the author's: a reader meets the general collection before the
+# reserve shelf that is carved out of it.
+
+[[collection]]
+slug = "general-lending"
+title = "General lending"
+summary = """
+The open shelves any member may borrow from, for the standard loan period.
+Most of the catalogue sits here, and a title moves out of it only when
+demand or fragility makes the standard loan unworkable.
+"""
+
+[[collection]]
+slug = "short-loan"
+title = "Short loan"
+summary = """
+Titles held back for a shorter period because demand outstrips copies.
+Membership of this collection is a circulation decision, not a property of
+the work, so a title enters and leaves it as reading lists change.
+"""
+
+[[collection]]
+slug = "reference-only"
+title = "Reference only"
+summary = """
+Held for consultation on the premises and never issued. The constraint is
+the item's own: a fragile, rare, or single-copy work whose absence from the
+building cannot be risked.
+"""

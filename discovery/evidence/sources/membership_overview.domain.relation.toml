@@ -1,0 +1,11 @@
+# Retained association metadata for the disco-agent methodology. The
+# delivered lens-file beside this one carries only provenance (id,
+# referent, section, quote); this sidecar holds the analytical framing
+# (forward/reverse readings, the object_ref relation edge, confidence, and
+# the last_updated stamp), keyed by association id.
+
+[[relation]]
+id         = "membership_overview.domain:0"
+forward    = "A member holds a library card and may hold several loans at once; their borrowing history should be easy to retrieve."
+reverse    = "domain.member carries a card identity and an aggregate of current and historical loans."
+confidence = "stated"

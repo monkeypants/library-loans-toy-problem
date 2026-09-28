@@ -1,0 +1,16 @@
+# Glossary-only terms for the golden library-loans corpus (namespace
+# `term`). A term is a canonical referent with no Python class of its own;
+# for evidence mapping a term and a domain entity are the same kind of
+# thing. Referenceable from evidence as `term.<slug>`.
+
+[[term]]
+slug = "patron"
+title = "Patron"
+summary = """
+The public-facing word for a library *member* — the person holding a card
+and borrowing copies. "Patron" and "member" name the same referent: staff
+use them interchangeably at the desk, while the formal model carries the
+concept as the ``domain.member.Member`` class. The term exists so the
+glossary records the synonym a reader will hear out loud even though no
+separate entity stands behind it.
+"""

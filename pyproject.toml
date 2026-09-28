@@ -1,0 +1,63 @@
+[project]
+name = "golden-loans"
+version = "0.0.0"
+description = "Synthetic, project-agnostic discovery corpus exercising the disco toolchain."
+requires-python = ">=3.11"
+
+# Marks this directory as a self-contained discovery project. The
+# toolchain (disco_agent.context.ProjectContext.discover) walks up to the
+# first pyproject.toml and reads this table, so the tools run against this
+# corpus with none of the host project's layout or vocabulary involved.
+[tool.disco]
+discovery = "discovery"
+docs = "docs"
+domain_package = "src/lib_loans/domain"
+
+# An extra code-backed referent namespace: the MARC 21 encoder. Its record and
+# leader classes get the same provenance treatment as the domain model —
+# proving a host adds a second python_modules namespace by config alone.
+[tool.disco.namespaces.codec]
+resolver = "python_modules"
+package = "src/lib_loans/codec"
+
+# An extra registry-backed canonical kind: the library's collections. Declared
+# by config alone (resolver = "canonical_toml"), with no facets and no
+# taxonomy — the ordinary shape of a host kind. Renders as a catalogue page
+# through `.. canonical-catalogue:: collection`.
+[tool.disco.namespaces.collection]
+resolver = "canonical_toml"
+file = "collections.toml"
+
+# An extra evidence source kind: external standards (here MARC 21 / Z39.2).
+# Lives under discovery/standards/ and discovery/evidence/standards/, renders
+# under docs/_evidence/by-source/standards/.
+[tool.disco.sources.standard]
+dir = "standards"
+label = "Standards"
+inline = ["standard", "standards"]
+
+# Bind the discovery lenses this corpus exercises to their canonical
+# namespaces, reading the prose source kinds. These bindings — not the
+# catalogue — are what make domain/persona/quality required on every prose
+# document, so /health's coverage gaps are the host's explicit choice. 'term'
+# is left unbound (opportunistic): membership_overview carries term evidence,
+# but no document is faulted for lacking it.
+[tool.disco.lenses.domain]
+namespaces = ["domain"]
+sources = ["prd", "meeting", "reference"]
+
+[tool.disco.lenses.persona]
+namespaces = ["persona"]
+sources = ["prd", "meeting", "reference"]
+
+[tool.disco.lenses.quality]
+namespaces = ["quality"]
+sources = ["prd", "meeting", "reference"]
+
+# Apply the catalogue 'rfc' lens to the code-backed namespaces, reading the
+# 'standard' source — proving a host wires a catalogue lens onto its own
+# things by config alone, defining no lens locally. It reads 'standard', not a
+# prose kind, so it is correctly absent from prose-document coverage.
+[tool.disco.lenses.rfc]
+namespaces = ["domain", "codec"]
+sources = ["standard"]

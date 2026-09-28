@@ -1,0 +1,9 @@
+#+TITLE: Acquisitions Sync — 2026-01-15
+
+* Catalogue search at the desk
+Librarians want to search the catalogue from the circulation desk so they
+can answer availability questions while the member waits.
+
+* Returns workflow
+Borrowers return books at the desk; staff confirm the loan is closed
+against the member's card.
