@@ -1,0 +1,11 @@
+# Retained association metadata for the disco-agent methodology. The
+# delivered lens-file beside this one carries only provenance (id,
+# referent, section, quote); this sidecar holds the analytical framing
+# (forward/reverse readings, the object_ref relation edge, confidence, and
+# the last_updated stamp), keyed by association id.
+
+[[relation]]
+id         = "membership_overview.term:0"
+forward    = "Patron is the public-facing synonym for a member, used interchangeably at the desk."
+reverse    = "term.patron is the glossary synonym the corpus records for domain.member.Member."
+confidence = "stated"

@@ -1,0 +1,11 @@
+# Retained association metadata for the disco-agent methodology. The
+# delivered lens-file beside this one carries only provenance (id,
+# referent, section, quote); this sidecar holds the analytical framing
+# (forward/reverse readings, the object_ref relation edge, confidence, and
+# the last_updated stamp), keyed by association id.
+
+[[relation]]
+id         = "letter_miss_jones.domain:0"
+forward    = "A specific title is recommended for the catalogue, treated as a title-level acquisition the library may or may not yet hold copies of."
+reverse    = "domain.book is the catalogue title an acquisition request names, independent of any physical copy."
+confidence = "stated"

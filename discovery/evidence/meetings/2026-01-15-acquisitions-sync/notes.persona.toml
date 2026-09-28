@@ -1,0 +1,17 @@
+source = "discovery/meetings/2026-01-15-acquisitions-sync/notes.org"
+source_kind = "meeting"
+title = "Acquisitions Sync — 2026-01-15"
+date = 2026-01-15
+lens = "persona"
+
+[[association]]
+id         = "2026-01-15-acquisitions-sync.persona:0"
+referent   = "persona.librarian"
+section    = "Catalogue search at the desk"
+quote      = "Librarians want to search the catalogue from the circulation desk"
+
+[[association]]
+id         = "2026-01-15-acquisitions-sync.persona:1"
+referent   = "persona.borrower"
+section    = "Returns workflow"
+quote      = "Borrowers return books at the desk"

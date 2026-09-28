@@ -1,0 +1,11 @@
+source = "discovery/sources/letter_miss_jones.md"
+source_kind = "reference"
+title = "Letter — Miss Jones, Class 2B"
+date = 2026-01-08
+lens = "domain"
+
+[[association]]
+id         = "letter_miss_jones.domain:0"
+referent   = "domain.book.Book"
+section    = "Body"
+quote      = "the library might add Frank Murr's *What a Mess* books to its collection"

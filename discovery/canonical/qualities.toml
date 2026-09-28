@@ -1,0 +1,23 @@
+# Canonical quality attributes for the golden corpus, organised under the
+# FURPS+ taxonomy. Referenceable from evidence as ``quality.<slug>``.
+
+[[quality]]
+slug = "searchability"
+category = "usability"
+title = "Searchability"
+summary = """
+*How quickly can staff find a title in the catalogue or a member's
+current loans from the desk?*
+"""
+
+[[quality]]
+slug = "reading-engagement"
+category = "functionality"
+title = "Reading engagement"
+summary = """
+*How well does the collection draw children — especially reluctant
+readers — into reading at home?* The quality teachers and parents judge
+the library on: not whether a title can be found, but whether the books on
+the shelf are the ones that get a child who will not open a book at their
+desk to take one home.
+"""

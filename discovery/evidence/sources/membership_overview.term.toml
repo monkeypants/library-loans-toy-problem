@@ -1,0 +1,11 @@
+source = "discovery/sources/membership_overview.md"
+source_kind = "prd"
+title = "Membership Overview"
+date = 2026-01-12
+lens = "term"
+
+[[association]]
+id         = "membership_overview.term:0"
+referent   = "term.patron"
+section    = "Notes"
+quote      = "Staff and the public use the word patron interchangeably with member, so the glossary should carry it as a synonym."

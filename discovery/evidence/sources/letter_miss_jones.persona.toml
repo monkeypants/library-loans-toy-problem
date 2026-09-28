@@ -1,0 +1,17 @@
+source = "discovery/sources/letter_miss_jones.md"
+source_kind = "reference"
+title = "Letter — Miss Jones, Class 2B"
+date = 2026-01-08
+lens = "persona"
+
+[[association]]
+id         = "letter_miss_jones.persona:0"
+referent   = "persona.teacher"
+section    = "Body"
+quote      = "I do not use the borrowing system myself, of course; my interest is simply that the children in my class have good books within reach."
+
+[[association]]
+id         = "letter_miss_jones.persona:1"
+referent   = "persona.borrower"
+section    = "Body"
+quote      = "Several of my pupils already hold library cards and borrow from you each week"
